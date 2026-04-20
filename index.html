@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Personal Site</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav>
+  <span class="nav-logo">~</span>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="photos.html">Photos</a></li>
+    <li><a href="thoughts.html">Thoughts</a></li>
+    <li><a href="projects.html">Projects</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <p class="hero-eyebrow">Personal space</p>
+  <h1>Photos, thoughts,<br>and side projects.</h1>
+  <p>A quiet corner of the internet where I post pictures I take, write when I feel like it, and share things I'm working on.</p>
+  <div class="hero-links">
+    <a href="photos.html" class="btn">View Photos</a>
+    <a href="thoughts.html" class="btn btn-ghost">Read Thoughts</a>
+  </div>
+</section>
+
+<div class="page" style="padding-top: 0;">
+
+  <hr class="section-rule">
+
+  <!-- Recent Photos -->
+  <div class="section-header">
+    <h2>Recent Photos</h2>
+    <a href="photos.html" class="view-all">All Photos &rarr;</a>
+  </div>
+
+  <div class="photo-grid" id="home-photos" style="grid-template-columns: repeat(3, 1fr);">
+    <div class="photo-item">
+      <div class="photo-placeholder">
+        <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="m21 15-5-5L5 19"/></svg>
+        Add a photo
+      </div>
+    </div>
+    <div class="photo-item">
+      <div class="photo-placeholder">
+        <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="m21 15-5-5L5 19"/></svg>
+        Add a photo
+      </div>
+    </div>
+    <div class="photo-item">
+      <div class="photo-placeholder">
+        <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="m21 15-5-5L5 19"/></svg>
+        Add a photo
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <!-- Recent Thoughts -->
+  <div class="section-header">
+    <h2>Recent Thoughts</h2>
+    <a href="thoughts.html" class="view-all">All Posts &rarr;</a>
+  </div>
+
+  <div class="post-list">
+    <div class="post-item">
+      <span class="post-date">Coming soon</span>
+      <div class="post-content">
+        <h3><a href="#">First post coming soon</a></h3>
+        <p class="post-excerpt">Nothing here yet — check back when I have something to say.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <!-- Projects -->
+  <div class="section-header">
+    <h2>Projects</h2>
+    <a href="projects.html" class="view-all">All Projects &rarr;</a>
+  </div>
+
+  <div class="project-grid">
+    <div class="project-card">
+      <p class="proj-label">In progress</p>
+      <h3>This website</h3>
+      <p>A personal site to share photos, write occasionally, and document side projects.</p>
+      <div class="proj-links">
+        <a href="#">Source &nearr;</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  &copy; <span id="year"></span> &mdash; built with plain HTML &amp; CSS
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

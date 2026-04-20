@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">~</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="photos.html">Photos</a></li>
+    <li><a href="thoughts.html">Thoughts</a></li>
+    <li><a href="projects.html" class="active">Projects</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+  <div class="page-title">
+    <h1>Projects</h1>
+    <p>Things I've built or am building.</p>
+  </div>
+
+  <!--
+    HOW TO ADD A PROJECT:
+    1. Copy one .project-card block below
+    2. Update the label (e.g. "Complete", "In progress", "Archived"),
+       title, description, and links
+    3. Remove any <a> tags you don't need (demo/source)
+  -->
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <p class="proj-label">In progress</p>
+      <h3>This website</h3>
+      <p>A personal site to post photos, write occasionally, and document side projects. Built with plain HTML and CSS.</p>
+      <div class="proj-links">
+        <a href="#">Source &nearr;</a>
+      </div>
+    </div>
+
+    <!-- Example project card (duplicate for new projects):
+    <div class="project-card">
+      <p class="proj-label">Complete</p>
+      <h3>Project name</h3>
+      <p>One or two sentences about what it is and why you built it.</p>
+      <div class="proj-links">
+        <a href="#">Demo &nearr;</a>
+        <a href="#">Source &nearr;</a>
+      </div>
+    </div>
+    -->
+
+  </div>
+</div>
+
+<footer>
+  &copy; <span id="year"></span> &mdash; built with plain HTML &amp; CSS
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
